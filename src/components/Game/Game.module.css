@@ -1,0 +1,79 @@
+.game .score {
+  font-size: 2rem;
+}
+
+.game span {
+  color: #9fd3c7;
+}
+
+.game .tip {
+}
+
+.game .tip span {
+  color: #9fd3c7;
+  font-weight: bold;
+}
+
+.game .word_container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.game .word_container > * {
+  border: 2px solid #000;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: #ccc;
+  color: #000;
+}
+
+.game .word_container .letter {
+  text-transform: uppercase;
+}
+
+.game .word_container .blank {
+}
+
+.game .letter_container form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.game .letter_container input {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.game .wrong_letter_container span {
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.game .wrong_letter_container span:last-child {
+  margin-right: 0;
+}
+
+.game .wrong_letter_container span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: rotate(-45deg);
+}
