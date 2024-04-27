@@ -2,7 +2,7 @@ import styles from "./GameOver.module.css";
 
 const GameOver = ({ retry, score }) => {
   return (
-    <div>
+    <section className={`${styles.game_over} container`}>
       <h1>Fim de jogo!</h1>
       <h3>
         A sua pontuação foi: <span>{score}</span>!
@@ -10,7 +10,7 @@ const GameOver = ({ retry, score }) => {
       <button className="btn btn-primary" type="button" onClick={retry}>
         Tentar de novo
       </button>
-    </div>
+    </section>
   );
 };
 

@@ -31,7 +31,8 @@ const Game = ({
   };
 
   return (
-    <div className={styles.game}>
+    <section className={`${styles.game} container`}>
+      <h1 className="title">Secret Word</h1>
       <p className={styles.score}>
         Pontuação: <span>{score}</span>
       </p>
@@ -65,17 +66,18 @@ const Game = ({
             required
             value={letter}
             ref={letterInputRef}
+            autoComplete="off"
           />
           <button className="btn btn-primary">Jogar!</button>
         </form>
       </div>
       <div className={styles.wrong_letter_container}>
-        <p>Letras já utilizadas:</p>
+        {wrongLetterArr.length > 0 && <p>Letras já utilizadas:</p>}
         {wrongLetterArr.map((wrongLetter, i) => (
           <span key={i}>{wrongLetter}</span>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

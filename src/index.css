@@ -1,20 +1,24 @@
 :root {
-  --bs-body-color: #ececec;
+  --bs-body-color: #f6e8e8;
   --bs-body-font-family: "Poppins", sans-serif;
 }
 
+input:focus {
+  outline: none;
+}
+
 .first-color {
-  background: #ececec;
+  background: #1d7d81;
 }
 
 .second-color {
-  background: #9fd3c7;
+  background: #213458;
 }
 
 .third-color {
-  background: #385170;
+  background: #887575;
 }
 
 .fourth-color {
-  background: #142d4c;
+  background: #f6e8e8;
 }

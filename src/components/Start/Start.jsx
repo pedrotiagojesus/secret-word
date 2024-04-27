@@ -2,11 +2,13 @@ import styles from "./Start.module.css";
 
 const Start = ({ startGame }) => {
   return (
-    <div>
+    <section className={`${styles.start_game} container`}>
+      <h1 className="title">Secret Word</h1>
+      <p>Clique no botão abaixo para começar a jogar</p>
       <button type="button" className="btn btn-primary" onClick={startGame}>
         Iniciar jogo
       </button>
-    </div>
+    </section>
   );
 };
 

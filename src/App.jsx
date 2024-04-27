@@ -79,6 +79,9 @@ function App() {
 
   // restart the game
   const retry = () => {
+    setAttempt(attemptStart);
+    setScore(0);
+
     setGameStage(stageArr[0].name);
   };
 
@@ -108,8 +111,7 @@ function App() {
   }, [guessedLetterArr]);
 
   return (
-    <div className="container d-flex flex-column text-center my-5">
-      <h1 className="title">Secret Word</h1>
+    <>
       {gameStage === "start" && <Start startGame={startGame} />}
       {gameStage === "game" && (
         <Game
@@ -124,7 +126,7 @@ function App() {
         />
       )}
       {gameStage === "end" && <GameOver retry={retry} score={score} />}
-    </div>
+    </>
   );
 }
 
