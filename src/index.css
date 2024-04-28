@@ -1,24 +1,43 @@
 :root {
   --bs-body-color: #f6e8e8;
   --bs-body-font-family: "Poppins", sans-serif;
+  --bs-body-font-size: 12px;
 }
 
 input:focus {
   outline: none;
 }
 
-.first-color {
-  background: #1d7d81;
+/* SM */
+
+@media (min-width: 576px) {
+  :root {
+    --bs-body-font-size: 12px;
+  }
 }
 
-.second-color {
-  background: #213458;
+/* MD */
+
+@media (min-width: 768px) {
+  :root {
+    --bs-body-font-size: 14px;
+  }
 }
 
-.third-color {
-  background: #887575;
+/* LG */
+
+@media (min-width: 992px) {
+  :root {
+    --bs-body-font-size: 16px;
+  }
 }
 
-.fourth-color {
-  background: #f6e8e8;
+/* XL */
+
+@media (min-width: 1200px) {
+}
+
+/* XXL */
+
+@media (min-width: 1400px) {
 }

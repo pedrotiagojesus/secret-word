@@ -32,7 +32,9 @@ const Game = ({
 
   return (
     <section className={`${styles.game} container`}>
-      <h1 className="title">Secret Word</h1>
+      <h1 className="brand">
+        Secret <span>W</span>ord
+      </h1>
       <p className={styles.score}>
         Pontuação: <span>{score}</span>
       </p>
@@ -41,7 +43,7 @@ const Game = ({
         Dica sobre a palavra: <span>{pickedCategory}</span>
       </h3>
 
-      <p>Você ainda tem {attempt} tentativa(s).</p>
+      <p>Ainda tens {attempt} tentativa(s).</p>
 
       <div className={styles.word_container}>
         {letterArr.map((letter, i) =>
@@ -56,7 +58,7 @@ const Game = ({
       </div>
 
       <div className={styles.letter_container}>
-        <p>Tente adivnhar uma letra da palavra</p>
+        <p>Tenta adivinhar uma letra da palavra</p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -71,6 +73,7 @@ const Game = ({
           <button className="btn btn-primary">Jogar!</button>
         </form>
       </div>
+
       <div className={styles.wrong_letter_container}>
         {wrongLetterArr.length > 0 && <p>Letras já utilizadas:</p>}
         {wrongLetterArr.map((wrongLetter, i) => (

@@ -1,6 +1,10 @@
+html {
+  font-size: var(--font-size);
+}
+
 body {
   background: linear-gradient(180deg, #1d7d81 0%, #213458 75%);
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 #root {
@@ -8,10 +12,56 @@ body {
 }
 
 section {
-  padding: 5rem 0;
+  padding: 1.25rem 0;
   height: 100%;
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 3.5rem;
+}
+
+.brand {
+  font-size: 3.5rem;
+}
+
+.brand span {
+  font-weight: bold;
+  color: var(--bs-yellow);
+  border: 1px solid #fff;
+  display: inline-block;
+  width: auto;
+  padding: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+/* SM */
+
+@media (min-width: 576px) {
+}
+
+/* MD */
+
+@media (min-width: 768px) {
+}
+
+/* LG */
+
+@media (min-width: 992px) {
+  section {
+    padding: 5rem 0;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+}
+
+/* XL */
+
+@media (min-width: 1200px) {
+}
+
+/* XXL */
+
+@media (min-width: 1400px) {
 }
